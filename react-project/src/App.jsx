@@ -5,6 +5,10 @@ import InputMirror from './class components/InputMirror';
 import SimpleTodo from './class components/SimpleTodo';
 import { Component } from 'react';
 import Timer from './class components/reactLifeCycle/Timer';
+import NetworkStatus from './class components/reactLifeCycle/Network_status';
+import Counters from './class components/reactLifeCycle/Counter';
+import UserCart from './class components/reactLifeCycle/UserCart';
+import MiniCalculator from './functionComponent/pureFunction/MiniCalculator';
 class App extends Component {
   constructor() {
     super()
@@ -30,8 +34,20 @@ class App extends Component {
           <h1>Timer</h1>
           <button onClick={this.toggleTmimer}>{this.state.showTimer ? "Stop" : "start"}</button>
           <hr />
-          {this.state.showTimer ? <Timer /> : 0 }
+          {this.state.showTimer ? <Timer /> : 0}
         </div>
+
+        {/* network trakcer */}
+        <NetworkStatus />
+
+        {/* lifecycle counter*/}
+        <Counters />
+
+        {/* api fetchimg*/}
+        <UserCart />
+
+        {/* pure function */}
+        <MiniCalculator />
 
 
 
