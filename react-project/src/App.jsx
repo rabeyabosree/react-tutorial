@@ -9,6 +9,10 @@ import NetworkStatus from './class components/reactLifeCycle/Network_status';
 import Counters from './class components/reactLifeCycle/Counter';
 import UserCart from './class components/reactLifeCycle/UserCart';
 import MiniCalculator from './functionComponent/pureFunction/MiniCalculator';
+import Todo from './functionComponent/pureFunction/Todo';
+import Logger from './functionComponent/impureFunction/Logger';
+import Product from './liftedstate/parentcomponent/Product';
+import Parent from './propsDriling/parent/Parent';
 class App extends Component {
   constructor() {
     super()
@@ -48,6 +52,18 @@ class App extends Component {
 
         {/* pure function */}
         <MiniCalculator />
+
+        {/* pure */}
+        <Todo />
+
+        {/*impure  function */}
+        <Logger />
+
+        {/* lifted state */}
+        <Product />
+
+        {/* props driling */}
+        <Parent />
 
 
 
