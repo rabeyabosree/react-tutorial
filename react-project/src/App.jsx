@@ -13,6 +13,8 @@ import Todo from './functionComponent/pureFunction/Todo';
 import Logger from './functionComponent/impureFunction/Logger';
 import Product from './liftedstate/parentcomponent/Product';
 import Parent from './propsDriling/parent/Parent';
+import FocusInput from './hooks/useRef/FocusInput';
+import AutoFocusInput from './hooks/useRef/AutoFocusInput';
 class App extends Component {
   constructor() {
     super()
@@ -64,7 +66,10 @@ class App extends Component {
 
         {/* props driling */}
         <Parent />
-
+        
+        {/**useRef */}
+        <FocusInput />
+        <AutoFocusInput />
 
 
       </>
