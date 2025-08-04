@@ -15,6 +15,12 @@ import Product from './liftedstate/parentcomponent/Product';
 import Parent from './propsDriling/parent/Parent';
 import FocusInput from './hooks/useRef/FocusInput';
 import AutoFocusInput from './hooks/useRef/AutoFocusInput';
+import { CartContextProvider } from './contex/CartContext';
+import ProductList from './useReducer/ProductList';
+import Cart from './liftedstate/childscomonent/Cart';
+import Productcart from './useReducer/ProductCart';
+import ExpenseReducer from './useReducer/ExpenseReducer';
+import SwapAndBuyApp from './useReducer/SwapAndBuyApp';
 class App extends Component {
   constructor() {
     super()
@@ -29,7 +35,7 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <CartContextProvider>
         <Counter />
         <ToggleText />
         <InputMirror />
@@ -71,8 +77,14 @@ class App extends Component {
         <FocusInput />
         <AutoFocusInput />
 
+        {/** use  reducer */}
+        <ProductList />
+        <Productcart />
+        <ExpenseReducer />
+        <SwapAndBuyApp />
 
-      </>
+
+      </CartContextProvider>
     )
   }
 }
