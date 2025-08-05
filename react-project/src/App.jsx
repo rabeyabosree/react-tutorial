@@ -16,11 +16,12 @@ import Parent from './propsDriling/parent/Parent';
 import FocusInput from './hooks/useRef/FocusInput';
 import AutoFocusInput from './hooks/useRef/AutoFocusInput';
 import { CartContextProvider } from './contex/CartContext';
-import ProductList from './useReducer/ProductList';
+import ProductList from './hooks/useReducer/ProductList';
 import Cart from './liftedstate/childscomonent/Cart';
-import Productcart from './useReducer/ProductCart';
-import ExpenseReducer from './useReducer/ExpenseReducer';
-import SwapAndBuyApp from './useReducer/SwapAndBuyApp';
+import Productcart from './hooks/useReducer/ProductCart';
+import ExpenseReducer from './hooks/useReducer/ExpenseReducer';
+import SwapAndBuyApp from './hooks/useReducer/SwapAndBuyApp';
+import SignUpForm from './components/SignUpForm';
 class App extends Component {
   constructor() {
     super()
@@ -82,6 +83,9 @@ class App extends Component {
         <Productcart />
         <ExpenseReducer />
         <SwapAndBuyApp />
+
+        {/**custom hook */}
+        <SignUpForm />
 
 
       </CartContextProvider>
