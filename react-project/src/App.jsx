@@ -22,6 +22,9 @@ import Productcart from './hooks/useReducer/ProductCart';
 import ExpenseReducer from './hooks/useReducer/ExpenseReducer';
 import SwapAndBuyApp from './hooks/useReducer/SwapAndBuyApp';
 import SignUpForm from './components/SignUpForm';
+import UseMemo from './hooks/performeOptimiz/UseMemo';
+import GroceryPlanner from './hooks/performeOptimiz/GroceryPlanner';
+import JobComparison from './hooks/performeOptimiz/JobComparison';
 class App extends Component {
   constructor() {
     super()
@@ -86,6 +89,11 @@ class App extends Component {
 
         {/**custom hook */}
         <SignUpForm />
+
+        {/**use memo */}
+        <UseMemo />
+        <GroceryPlanner />
+        <JobComparison />
 
 
       </CartContextProvider>
