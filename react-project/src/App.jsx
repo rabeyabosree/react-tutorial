@@ -25,6 +25,9 @@ import SignUpForm from './components/SignUpForm';
 import UseMemo from './hooks/performeOptimiz/UseMemo';
 import GroceryPlanner from './hooks/performeOptimiz/GroceryPlanner';
 import JobComparison from './hooks/performeOptimiz/JobComparison';
+import UserAuthen from './hooks/HOC/UserAuthen';
+import UserProfile from './hooks/HOC/UserProfile';
+import InputRef from './hooks/forwardRefs/InputRef';
 class App extends Component {
   constructor() {
     super()
@@ -94,6 +97,13 @@ class App extends Component {
         <UseMemo />
         <GroceryPlanner />
         <JobComparison />
+
+        {/**HOC */}
+        <UserAuthen />
+
+        {/**HOC with forwardref */}
+        <InputRef />
+       
 
 
       </CartContextProvider>
