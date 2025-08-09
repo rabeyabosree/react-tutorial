@@ -28,6 +28,9 @@ import JobComparison from './hooks/performeOptimiz/JobComparison';
 import UserAuthen from './hooks/HOC/UserAuthen';
 import UserProfile from './hooks/HOC/UserProfile';
 import InputRef from './hooks/forwardRefs/InputRef';
+import TabNavigation from './components/controlled/TabNavigation';
+import ToggleTheme from './components/uncontrolled/ToggleTheme';
+import ComplimentGenerator from './hooks/useeffect/ComplimentGenerator';
 class App extends Component {
   constructor() {
     super()
@@ -103,6 +106,16 @@ class App extends Component {
 
         {/**HOC with forwardref */}
         <InputRef />
+        {/**controlled component and one way data binding  */}
+        <TabNavigation />
+
+        {/* uncontroll component with useref */}
+        <ToggleTheme />
+
+
+        {/**useeffect */}
+        <ComplimentGenerator />
+
        
 
 
