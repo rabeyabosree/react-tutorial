@@ -31,6 +31,7 @@ import InputRef from './hooks/forwardRefs/InputRef';
 import TabNavigation from './components/controlled/TabNavigation';
 import ToggleTheme from './components/uncontrolled/ToggleTheme';
 import ComplimentGenerator from './hooks/useeffect/ComplimentGenerator';
+import UseFetchUsers from './hooks/customHook/usease/UseFetchUsers';
 class App extends Component {
   constructor() {
     super()
@@ -115,6 +116,10 @@ class App extends Component {
 
         {/**useeffect */}
         <ComplimentGenerator />
+
+        {/* custom hook */}
+        <UseFetchUsers />
+        <NetworkStatus />
 
        
 
