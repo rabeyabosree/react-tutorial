@@ -32,6 +32,8 @@ import TabNavigation from './components/controlled/TabNavigation';
 import ToggleTheme from './components/uncontrolled/ToggleTheme';
 import ComplimentGenerator from './hooks/useeffect/ComplimentGenerator';
 import UseFetchUsers from './hooks/customHook/usease/UseFetchUsers';
+import DropDownHook from './hooks/customHook/usease/DropDownHook';
+import ThemeToggle from './hooks/customHook/usease/ThemeToggle';
 class App extends Component {
   constructor() {
     super()
@@ -120,6 +122,8 @@ class App extends Component {
         {/* custom hook */}
         <UseFetchUsers />
         <NetworkStatus />
+        <DropDownHook />
+        <ThemeToggle />
 
        
 
